@@ -1,0 +1,1017 @@
+<html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="ddaccordion.js">
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* Please keep this notice intact
+***********************************************/
+</script>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#bbb;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#594F4F;background-color:#E0FFEB;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#bbb;color:#493F3F;background-color:#9DE0AD;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+tr:hover td {background:#FFE5F9}
+.tg-sort-header::-moz-selection{background:0 0}.tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}.tg-sort-header:after{content:'';float:right;margin-top:7px;border-width:0 5px 5px;border-style:solid;border-color:#404040 transparent;visibility:hidden}.tg-sort-header:hover:after{visibility:visible}.tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:.4}.tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+</style>
+<style type="text/css">
+.mypets{ /*header of 1st demo*/
+cursor: hand;
+cursor: pointer;
+padding: 2px 5px;
+border: 1px solid gray;
+background: #E1E1E1;
+}
+.openpet{ /*class added to contents of 1st demo when they are open*/
+background: yellow;
+}
+.technology{ /*header of 2nd demo*/
+cursor: hand;
+cursor: pointer;
+font: bold 14px Verdana;
+margin: 10px 0;
+}
+.openlanguage{ /*class added to contents of 2nd demo when they are open*/
+color: green;
+}
+.closedlanguage{ /*class added to contents of 2nd demo when they are closed*/
+color: red;
+}
+</style>
+<script type="text/javascript">
+//Initialize 2nd demo:
+ddaccordion.init({
+    headerclass: "technology", //Shared CSS class name of headers group
+    contentclass: "thelanguage", //Shared CSS class name of contents group
+    revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+    mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+    collapseprev: false, //Collapse previous content (so only one open at any time)? true/false
+    defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+    onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+    animatedefault: false, //Should contents open by default be animated into view?
+    scrolltoheader: false, //scroll to header each time after it's been expanded by the user?
+    scrolltocontent: false, //scroll to expanded content each time after it's been expanded by the user?
+    persiststate: false, //persist state of opened contents within browser session?
+    toggleclass: ["closedlanguage", "openlanguage"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+    togglehtml: ["prefix", "<img src='plus.gif' style='width:13px; height:13px' /> ", "<img src='minus.gif' style='width:13px; height:13px' /> "], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+    animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+    oninit:function(expandedindices){ //custom code to run when headers have initalized
+        //do nothing
+    },
+    onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+        //do nothing
+    }
+})
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<section id="home-slider">
+    <div class="container">
+        <div class="main-slider1">
+            <a href="javascript:history.go(-1)" title="Back"><h2>Show Case</h2></a>
+            <a href="#" onClick="ddaccordion.collapseall('technology'); return false">Collapse all</a>  | <a href="#" onClick="ddaccordion.expandall('technology'); return false">Expand all</a>
+            <div class="technology">2015</div>
+                <div class="thelanguage">
+<div class="tg-wrap"><table id="tg-hxDS7" class="tg">
+    <tr>
+        <th class="tg-0lax">S. No</th>
+        <th class="tg-0lax">EVENTS</th>
+        <th class="tg-0lax">DATE</th>
+    </tr>
+    <tr>
+        <td class="tg-0lax">1</td>
+        <td class="tg-0lax">IGIPESS A SEMINNAR ON ART OF NEGOTIATION ( MR RAJEEV JAIN)</td>
+        <td class="tg-0lax">08012015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">2</td>
+        <td class="tg-0lax">Road Safety through Sprituality</td>
+        <td class="tg-0lax">17012015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">3</td>
+        <td class="tg-0lax">Visit of Porf Brian Holding</td>
+        <td class="tg-0lax">19022015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">4</td>
+        <td class="tg-0lax">Antardhavni DU</td>
+        <td class="tg-0lax">21022015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">5</td>
+        <td class="tg-0lax">Sports Day</td>
+        <td class="tg-0lax">23032015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">6</td>
+        <td class="tg-0lax">Blood Donation</td>
+        <td class="tg-0lax">27032015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">7</td>
+        <td class="tg-0lax">Happiness and stress management</td>
+        <td class="tg-0lax">02042015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">8</td>
+        <td class="tg-0lax">Dr David USA</td>
+        <td class="tg-0lax">14052015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">9</td>
+        <td class="tg-0lax">FITCO</td>
+        <td class="tg-0lax">10062015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">10</td>
+        <td class="tg-0lax">Inter Class Quiz Competition DR VIJAY</td>
+        <td class="tg-0lax">18092015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">11</td>
+        <td class="tg-0lax">Inter Class Debate Competition</td>
+        <td class="tg-0lax">16102015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">12</td>
+        <td class="tg-0lax">Celebrating 125 th birth Anniversary of Bharat Ratna Dr. Bhim Rao Ambedkar</td>
+        <td class="tg-0lax">30112015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">13</td>
+        <td class="tg-0lax">Chairman Interaction</td>
+        <td class="tg-0lax">04122015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">14</td>
+        <td class="tg-0lax">IGIPESS FITCO 15 Dec 2015 to 04&nbsp;&nbsp;jan 2016</td>
+        <td class="tg-0lax">15122015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">15</td>
+        <td class="tg-0lax">Delhi University Handball Camp Dt 23 12 2015</td>
+        <td class="tg-0lax">23122015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">16</td>
+        <td class="tg-0lax">Body Composition&nbsp;&nbsp;&nbsp;Dt 29 12 2015</td>
+        <td class="tg-0lax">29122015</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">17</td>
+        <td class="tg-0lax">hockey game Dt 29 12 2015</td>
+        <td class="tg-0lax">29122015</td>
+    </tr>
+</table></div>
+                </div>
+            <div class="technology">2016</div>
+                <div class="thelanguage">
+   <div class="tg-wrap"><table id="tg-cJ0NU" class="tg">
+    <tr>
+        <th class="tg-0lax">S. No</th>
+        <th class="tg-0lax">EVENTS</th>
+        <th class="tg-0lax">DATE</th>
+    </tr>
+    <tr>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">Dr Chris Sellars</td>
+        <td class="tg-0lax">02012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">1</td>
+        <td class="tg-0lax">Celebrating&nbsp;&nbsp;Lohri dt 12.01.2016</td>
+        <td class="tg-0lax">12012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">2</td>
+        <td class="tg-0lax">Celebrating Birth Anniversary of swami vivekananda</td>
+        <td class="tg-0lax">12012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">3</td>
+        <td class="tg-0lax">FITCO</td>
+        <td class="tg-0lax">15012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">4</td>
+        <td class="tg-0lax">live webcast of the address by president of india</td>
+        <td class="tg-0lax">19012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">5</td>
+        <td class="tg-0lax">Tug Of War Match</td>
+        <td class="tg-0lax">22012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">6</td>
+        <td class="tg-0lax">Handball Match</td>
+        <td class="tg-0lax">28012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">7</td>
+        <td class="tg-0lax">Tug Of War&nbsp;&nbsp;Match</td>
+        <td class="tg-0lax">29012016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">8</td>
+        <td class="tg-0lax">football Match</td>
+        <td class="tg-0lax">19022016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">9</td>
+        <td class="tg-0lax">DELHI HAAT HARI NAGAR&nbsp;&nbsp;(FITCO, YOGA, FENCE)</td>
+        <td class="tg-0lax">01032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">10</td>
+        <td class="tg-0lax">Handball Match</td>
+        <td class="tg-0lax">04032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">11</td>
+        <td class="tg-0lax">KABADDI MATCH</td>
+        <td class="tg-0lax">09032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">12</td>
+        <td class="tg-0lax">Lecturer Dr sandeep tiwari</td>
+        <td class="tg-0lax">10032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">13</td>
+        <td class="tg-0lax">ANNUAL ATHLETICS MEET 2016</td>
+        <td class="tg-0lax">11032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">14</td>
+        <td class="tg-0lax">VISIT Dt 17 03 2016</td>
+        <td class="tg-0lax">17032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">15</td>
+        <td class="tg-0lax">Annual function</td>
+        <td class="tg-0lax">21032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">16</td>
+        <td class="tg-0lax">NATIONAL SEMINAR CURRICULUM &amp; SYLLABI DESIGN IN THE PARADIGM OF PHYSICAL EDUCATION</td>
+        <td class="tg-0lax">22032016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">17</td>
+        <td class="tg-0lax">Basketball match</td>
+        <td class="tg-0lax">03042016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">18</td>
+        <td class="tg-0lax">Annual Fest&nbsp;&nbsp;SHANKHNAAD (April 18&nbsp;&nbsp;2016 ) at IGIPESS 2016</td>
+        <td class="tg-0lax">18042016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">PLACEMENT DRIVE - 2016</td>
+        <td class="tg-0lax">19042016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">21</td>
+        <td class="tg-0lax">IGIPESS CAMPUS PLACEMENT WEEK PLACEMENT DRIVE 2016 DATE 19 APRIL,2016&nbsp;&nbsp;TO 22 APRIL,2016 CONTACT PERSON DR TARAK NATH PRAMANIK DT.21 04 2016</td>
+        <td class="tg-0lax">19042016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">22</td>
+        <td class="tg-0lax">SPSS in phy. edu. 05.05 to 17.06.2016</td>
+        <td class="tg-0lax">05052016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">23</td>
+        <td class="tg-0lax">IGIPESS FITCO FOURTH BATCH</td>
+        <td class="tg-0lax">31052016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">24</td>
+        <td class="tg-0lax">yoga edu.</td>
+        <td class="tg-0lax">31052016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">25</td>
+        <td class="tg-0lax">College Magzin</td>
+        <td class="tg-0lax">21062016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">26</td>
+        <td class="tg-0lax">YOGA FIRST BATCH</td>
+        <td class="tg-0lax">27062016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">27</td>
+        <td class="tg-0lax">IGI ADMISSION VIDEO 28 ?June ?2016</td>
+        <td class="tg-0lax">28062016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">28</td>
+        <td class="tg-0lax">COLLEGE Visit</td>
+        <td class="tg-0lax">02072016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">29</td>
+        <td class="tg-0lax">Savita rani retirement program</td>
+        <td class="tg-0lax">29072016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">30</td>
+        <td class="tg-0lax">FOUNDATION DAY CELEBRATION</td>
+        <td class="tg-0lax">03082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">31</td>
+        <td class="tg-0lax">Workshop EFILLING</td>
+        <td class="tg-0lax">06082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">32</td>
+        <td class="tg-0lax">Orientation Day</td>
+        <td class="tg-0lax">06082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">33</td>
+        <td class="tg-0lax">Plantation programme</td>
+        <td class="tg-0lax">12082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">34</td>
+        <td class="tg-0lax">National Service Scheme NSS unit of IGIPESS</td>
+        <td class="tg-0lax">16082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">35</td>
+        <td class="tg-0lax">CPR</td>
+        <td class="tg-0lax">19082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">36</td>
+        <td class="tg-0lax">TUG OF WAR</td>
+        <td class="tg-0lax">19082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">37</td>
+        <td class="tg-0lax">MS-EXCEL WORKSHOP</td>
+        <td class="tg-0lax">22082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">38</td>
+        <td class="tg-0lax">NSS</td>
+        <td class="tg-0lax">22082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">39</td>
+        <td class="tg-0lax">NAAC</td>
+        <td class="tg-0lax">26082016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">41</td>
+        <td class="tg-0lax">NSS</td>
+        <td class="tg-0lax">01092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">42</td>
+        <td class="tg-0lax">TUG OF WAR</td>
+        <td class="tg-0lax">02092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">43</td>
+        <td class="tg-0lax">Teachers' Day</td>
+        <td class="tg-0lax">05092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">44</td>
+        <td class="tg-0lax">Eleacation DATE ?</td>
+        <td class="tg-0lax">09092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">45</td>
+        <td class="tg-0lax">dengue</td>
+        <td class="tg-0lax">16092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">46</td>
+        <td class="tg-0lax">BLOOD DONATION CAMP</td>
+        <td class="tg-0lax">22092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">47</td>
+        <td class="tg-0lax">M.P.Ed Syllabus</td>
+        <td class="tg-0lax">27092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">48</td>
+        <td class="tg-0lax">NCC</td>
+        <td class="tg-0lax">28092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">49</td>
+        <td class="tg-0lax">B.P.Ed Syllabus</td>
+        <td class="tg-0lax">29092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">50</td>
+        <td class="tg-0lax">Innovation Project</td>
+        <td class="tg-0lax">30092016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">51</td>
+        <td class="tg-0lax">IGI SPECIAL CAMP ENROLLMENT FOR YOUTH ELECTORS</td>
+        <td class="tg-0lax">06102016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">52</td>
+        <td class="tg-0lax">IGIPESS PWD&nbsp;&nbsp;MATTER</td>
+        <td class="tg-0lax">06102016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">53</td>
+        <td class="tg-0lax">igi workshop</td>
+        <td class="tg-0lax">06102016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">54</td>
+        <td class="tg-0lax">international workshop</td>
+        <td class="tg-0lax">16102016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">55</td>
+        <td class="tg-0lax">Seminar Innovation project igpe-302 university of delhi</td>
+        <td class="tg-0lax">21102016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">56</td>
+        <td class="tg-0lax">ASSEMBLY</td>
+        <td class="tg-0lax">04112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">58</td>
+        <td class="tg-0lax">SPSS TRAINING DATE 5 TO</td>
+        <td class="tg-0lax">05112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">57</td>
+        <td class="tg-0lax">seminar on education day</td>
+        <td class="tg-0lax">11112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">59</td>
+        <td class="tg-0lax">Gymnastic Saminar</td>
+        <td class="tg-0lax">18112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">60</td>
+        <td class="tg-0lax">Seven Day Nation Workshop on MATLAB APPLICATION</td>
+        <td class="tg-0lax">18112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">61</td>
+        <td class="tg-0lax">93 rd&nbsp;&nbsp;ANNUAL CONVOCATION LIVE WEBCAST</td>
+        <td class="tg-0lax">19112016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">62</td>
+        <td class="tg-0lax">WEBCAST Topic Digital Economy (December 01, 2016)httpwebcast.gov.inmhrd</td>
+        <td class="tg-0lax">01122016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">63</td>
+        <td class="tg-0lax">DISMANTLE RF TOWER</td>
+        <td class="tg-0lax">10122016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">64</td>
+        <td class="tg-0lax">LECTURE ON SPORTS PSYCHOLOGY BY&nbsp;&nbsp;PROF. VERLIN B. HINSZ</td>
+        <td class="tg-0lax">19122016</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">65</td>
+        <td class="tg-0lax">Phd lab DPESS</td>
+        <td class="tg-0lax">19122016</td>
+    </tr>
+</table></div>
+                </div>
+            <div class="technology">2017</div>
+                <div class="thelanguage">
+                    <div class="tg-wrap"><table id="tg-mrORA" class="tg">
+    <tr>
+        <th class="tg-0lax">S. No</th>
+        <th class="tg-0lax">EVENTS</th>
+        <th class="tg-0lax">DATE</th>
+    </tr>
+    <tr>
+        <td class="tg-0lax">1</td>
+        <td class="tg-0lax">Web cast of the President of India</td>
+        <td class="tg-0lax">10012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">2</td>
+        <td class="tg-0lax">Celebrating&nbsp;&nbsp;Lohri</td>
+        <td class="tg-0lax">13012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">3</td>
+        <td class="tg-0lax">road safety</td>
+        <td class="tg-0lax">17012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">4</td>
+        <td class="tg-0lax">3RD ANNUAL ALUMNI MEET OF IGIPESS</td>
+        <td class="tg-0lax">23012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">5</td>
+        <td class="tg-0lax">ASSEMBLY igi</td>
+        <td class="tg-0lax">25012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">6</td>
+        <td class="tg-0lax">7 heaven football tournament</td>
+        <td class="tg-0lax">27012017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">7</td>
+        <td class="tg-0lax">handball delhi university camp</td>
+        <td class="tg-0lax">02022017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">8</td>
+        <td class="tg-0lax">VISAKA</td>
+        <td class="tg-0lax">08022017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">9</td>
+        <td class="tg-0lax">NATIONAL PARA. SEMINAR&nbsp;&nbsp;IGI</td>
+        <td class="tg-0lax">28022017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">10</td>
+        <td class="tg-0lax">Paralympic &amp; Diffrently Abled Persons</td>
+        <td class="tg-0lax">28022017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">11</td>
+        <td class="tg-0lax">HOLI</td>
+        <td class="tg-0lax">10032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">12</td>
+        <td class="tg-0lax">Curriculum design &amp; Development</td>
+        <td class="tg-0lax">23032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">13</td>
+        <td class="tg-0lax">ALUMNI</td>
+        <td class="tg-0lax">26032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">14</td>
+        <td class="tg-0lax">ASSEMBLY AND TUG OF WAR</td>
+        <td class="tg-0lax">27032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">15</td>
+        <td class="tg-0lax">ANNUAL ATHLETICS MEET</td>
+        <td class="tg-0lax">28032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">16</td>
+        <td class="tg-0lax">ANNUAL DAY PRIZE DISTRIBUTION FUNCTION</td>
+        <td class="tg-0lax">30032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">17</td>
+        <td class="tg-0lax">STUDENTS FEST</td>
+        <td class="tg-0lax">31032017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">18</td>
+        <td class="tg-0lax">RETIREMENT&nbsp;&nbsp;(1. SUBHASH GIRI ,2.&nbsp;&nbsp;JANAK GIRI ,3.&nbsp;&nbsp;MAN BAHADUR ,4.&nbsp;&nbsp;SHRAWAN SINGH , 5.&nbsp;&nbsp;OM PARKASH GIHARA, )</td>
+        <td class="tg-0lax">07042017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">19</td>
+        <td class="tg-0lax">IGIPESS assembly</td>
+        <td class="tg-0lax">10042017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">IGIPESS assembly</td>
+        <td class="tg-0lax">11042017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">21</td>
+        <td class="tg-0lax">INDO US CONCLAVE &amp; PLACEMENT DRIVE</td>
+        <td class="tg-0lax">20042017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">22</td>
+        <td class="tg-0lax">FITCO</td>
+        <td class="tg-0lax">30052017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">23</td>
+        <td class="tg-0lax">IGIPESS Celebrates 3rd International Yoga Day</td>
+        <td class="tg-0lax">21062017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">24</td>
+        <td class="tg-0lax">YOGA</td>
+        <td class="tg-0lax">28062017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">25</td>
+        <td class="tg-0lax">ADMISSION 2017 bsc</td>
+        <td class="tg-0lax">11072017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">26</td>
+        <td class="tg-0lax">Orientation Day</td>
+        <td class="tg-0lax">24072017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">28</td>
+        <td class="tg-0lax">computer lab REPAIR WORK</td>
+        <td class="tg-0lax">26082017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">29</td>
+        <td class="tg-0lax">Teacher Day</td>
+        <td class="tg-0lax">05092017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">30</td>
+        <td class="tg-0lax">webcast</td>
+        <td class="tg-0lax">11092017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">31</td>
+        <td class="tg-0lax">students union election</td>
+        <td class="tg-0lax">12092017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">32</td>
+        <td class="tg-0lax">igipess</td>
+        <td class="tg-0lax">17102017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">33</td>
+        <td class="tg-0lax">igi</td>
+        <td class="tg-0lax">01112017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">34</td>
+        <td class="tg-0lax">WORKSHOP &amp; TRAINING PROGRAMME governance of colleges</td>
+        <td class="tg-0lax">13112017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">35</td>
+        <td class="tg-0lax">WORKSHOP ON SCREENING EVALUATION PROCEDURE FOR APPLICATION FOR THE POST OF ASSISTANT PROFESSOR &amp; ROSTER OF NTS</td>
+        <td class="tg-0lax">14112017</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">36</td>
+        <td class="tg-0lax">INDO- AUSTRALIAN CONCLAVE</td>
+        <td class="tg-0lax">12122017</td>
+    </tr>
+</table></div>
+                </div>
+            <div class="technology">2018</div>
+                <div class="thelanguage">
+                    <div class="tg-wrap"><table id="tg-RHfaK" class="tg">
+    <tr>
+        <th class="tg-0lax">S. No</th>
+        <th class="tg-0lax">EVENTS</th>
+        <th class="tg-0lax">DATE</th>
+    </tr>
+    <tr>
+        <td class="tg-0lax">1</td>
+        <td class="tg-0lax">Entrance hall assembly</td>
+        <td class="tg-0lax">23012018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">2</td>
+        <td class="tg-0lax">Flag Hosting (26.01.2018)</td>
+        <td class="tg-0lax">25012018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">3</td>
+        <td class="tg-0lax">IGI</td>
+        <td class="tg-0lax">22022018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">4</td>
+        <td class="tg-0lax">ANNUAL ATHLETICS MEET</td>
+        <td class="tg-0lax">15032018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">5</td>
+        <td class="tg-0lax">UMANG</td>
+        <td class="tg-0lax">22032018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">6</td>
+        <td class="tg-0lax">Annual day</td>
+        <td class="tg-0lax">27032018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">7</td>
+        <td class="tg-0lax">BLOOD DONATION CAMP</td>
+        <td class="tg-0lax">11042018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">8</td>
+        <td class="tg-0lax">RETIREMENT ( RAVINDER SHARMA )</td>
+        <td class="tg-0lax">27042018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">9</td>
+        <td class="tg-0lax">FUNCTIONAL TRAINING WORKSHOP</td>
+        <td class="tg-0lax">05052018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">10</td>
+        <td class="tg-0lax">FREE YOGA CAMP</td>
+        <td class="tg-0lax">21052018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">11</td>
+        <td class="tg-0lax">Pledge</td>
+        <td class="tg-0lax">21052018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">12</td>
+        <td class="tg-0lax">CCYED</td>
+        <td class="tg-0lax">29052018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">13</td>
+        <td class="tg-0lax">WEBCAST Interaction with Beneficiaries of Jan Aushadhi Schemes by Hon'ble Prime Minister</td>
+        <td class="tg-0lax">07062018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">14</td>
+        <td class="tg-0lax">FITCO 02.07.18v to 29.07.18</td>
+        <td class="tg-0lax">02.07.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">15</td>
+        <td class="tg-0lax">Admmission Certificate Verifiacation date 11 07 2018 to date 12 07 2018</td>
+        <td class="tg-0lax">11.07.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">16</td>
+        <td class="tg-0lax">Physical Fitness Test B.Sc (13, 14.07.2018), B.P.Ed., M.P.Ed. 17,18.07.18</td>
+        <td class="tg-0lax">13.07.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">17</td>
+        <td class="tg-0lax">Basu Leave and Lien date 16 07 2018</td>
+        <td class="tg-0lax">16072018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">18</td>
+        <td class="tg-0lax">Orientation, Foundation and Plantation Day Date&nbsp;&nbsp;03.08.2018</td>
+        <td class="tg-0lax">03.08.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">19</td>
+        <td class="tg-0lax">Orientation Day DATE 10.08.2018</td>
+        <td class="tg-0lax">10.08.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">INDEPENDENCE DAY DATE 14.08.2018</td>
+        <td class="tg-0lax">14.08.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">21</td>
+        <td class="tg-0lax">Sensitization workshop&nbsp;&nbsp;Control of vector Borne Diseases(Dengue , Chikungunya,Malaria etc.) Dtae&nbsp;&nbsp;06 09 2018</td>
+        <td class="tg-0lax">06.09.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">22</td>
+        <td class="tg-0lax">NTS RAMBIR VOLUNTARY RETIREMENT SCHEME(VRS ) DATE 11 09 2018</td>
+        <td class="tg-0lax">11.09.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">23</td>
+        <td class="tg-0lax">STUDENTS ELECTIONS DATE 12 09 2018</td>
+        <td class="tg-0lax">12.09.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">24</td>
+        <td class="tg-0lax">NSS DATE 24 09 2018</td>
+        <td class="tg-0lax">24.09.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">25</td>
+        <td class="tg-0lax">Students Interaction With Mr. Amit Panghal Gold Medalist, Asian Games 2018 (Boxing) Organised By Students Union (I.G.I.P.E.S.S.) Date 26.09.2018</td>
+        <td class="tg-0lax">26.09.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">26</td>
+        <td class="tg-0lax">WORKSHOP SENSITIZATION FOR PREVENTION OF SEXUAL HARASSMENT AGAINST WOMEN AT WORKPLACE DATE 05 10 2018</td>
+        <td class="tg-0lax">05.10.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">27</td>
+        <td class="tg-0lax">DELHI OLYMPIC (ASSOCIATION) GAMES 2018&nbsp;&nbsp;JUDO,ROPE SKIPPING DATE 15 10 2018&nbsp;&nbsp;TO 17 10 2018</td>
+        <td class="tg-0lax">15.10.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">28</td>
+        <td class="tg-0lax">DELHI OLYMPIC (ASSOCIATION) GAMES 2018&nbsp;&nbsp;JUDO (Distribute Medal and Certificate)&nbsp;&nbsp;&nbsp;DATE 29 10 2018</td>
+        <td class="tg-0lax">29.10.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">29</td>
+        <td class="tg-0lax">Glimpses of Lesson Plan</td>
+        <td class="tg-0lax">30.10.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">30</td>
+        <td class="tg-0lax">Pledge</td>
+        <td class="tg-0lax">31.10.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">31</td>
+        <td class="tg-0lax">Pledge</td>
+        <td class="tg-0lax">01.11.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">32</td>
+        <td class="tg-0lax">A Story Reading Program DATE 02 11 2018</td>
+        <td class="tg-0lax">02.11.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">33</td>
+        <td class="tg-0lax">Gymnastics date 05 11 2018</td>
+        <td class="tg-0lax">05.11.2018</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">34</td>
+        <td class="tg-0lax">ROAD SAFETY AWARENESS CAMPAIGN BY DELHI TRAFFIC POLICE&nbsp;&nbsp;RESPECT THIS TRI COLOUR TOO DATE 22 11 2018</td>
+        <td class="tg-0lax">22.11.2018</td>
+    </tr>
+</table></div>
+                </div>
+            <div class="technology">2019</div>
+                <div class="thelanguage">
+                    <div class="tg-wrap"><table id="tg-tzDxW" class="tg">
+    <tr>
+        <th class="tg-0lax">S. No</th>
+        <th class="tg-0lax">EVENTS</th>
+        <th class="tg-0lax">DATE</th>
+    </tr>
+    <tr>
+        <td class="tg-0lax">1</td>
+        <td class="tg-0lax">WEIGHTLIFTING INTRAMURAL</td>
+        <td class="tg-0lax">10 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">2</td>
+        <td class="tg-0lax">HANDBALL INTRAMURAL</td>
+        <td class="tg-0lax">11 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">3</td>
+        <td class="tg-0lax">Celebrating&nbsp;&nbsp;Lohri</td>
+        <td class="tg-0lax">14 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">4</td>
+        <td class="tg-0lax">FRESHER'S PARTY</td>
+        <td class="tg-0lax">15 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">5</td>
+        <td class="tg-0lax">NSS</td>
+        <td class="tg-0lax">23 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">6</td>
+        <td class="tg-0lax">GENDER EQUALITY</td>
+        <td class="tg-0lax">24 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">7</td>
+        <td class="tg-0lax">CELEBRATION OF NATIONAL VOTER'S DAY</td>
+        <td class="tg-0lax">25 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">8</td>
+        <td class="tg-0lax">Cricket Intramural</td>
+        <td class="tg-0lax">25 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">9</td>
+        <td class="tg-0lax">Flag Hosting (26.01.2018)</td>
+        <td class="tg-0lax">25 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">10</td>
+        <td class="tg-0lax">Pariksha pe Charcha 2.0</td>
+        <td class="tg-0lax">29 01 2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">11</td>
+        <td class="tg-0lax">CARRIOR CONCLAVE ORG. BY DEPT. OF EDUCATION, GNCTD AT TYAGRAJ STADIUM</td>
+        <td class="tg-0lax">29.01.2019 TO 31.01.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">12</td>
+        <td class="tg-0lax">RETIREMENT ( KISHORI LAL )</td>
+        <td class="tg-0lax">31.01.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">13</td>
+        <td class="tg-0lax">KHO-KHO INTRAMURAL</td>
+        <td class="tg-0lax">01.02.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">14</td>
+        <td class="tg-0lax">Natinal Seminar on Health Healty Lifestyle,Food &amp; Vitamins Supliments</td>
+        <td class="tg-0lax">05.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">15</td>
+        <td class="tg-0lax">ANTI DOPING</td>
+        <td class="tg-0lax">07.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">16</td>
+        <td class="tg-0lax">National Seminar&nbsp;&nbsp;dt 05.03.2019 , 08.03.2019</td>
+        <td class="tg-0lax">08.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">17</td>
+        <td class="tg-0lax">30th&nbsp;&nbsp;DELHI STATE TUG OF WAR</td>
+        <td class="tg-0lax">22.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">18</td>
+        <td class="tg-0lax">30th&nbsp;&nbsp;DELHI STATE TUG OF WAR&nbsp;&nbsp;24.03.2019</td>
+        <td class="tg-0lax">24.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">19</td>
+        <td class="tg-0lax">Athletic Meet 2019</td>
+        <td class="tg-0lax">26.03.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">20</td>
+        <td class="tg-0lax">BLOOD DONATION CAMP</td>
+        <td class="tg-0lax">04.04.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">21</td>
+        <td class="tg-0lax">ANNUAL DAY FUNCTION 10.04.2019</td>
+        <td class="tg-0lax">10.04.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">22</td>
+        <td class="tg-0lax">PLACEMENT DRIVE - 2019</td>
+        <td class="tg-0lax">15.04.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">23</td>
+        <td class="tg-0lax">Workshop on Software for Biomechanical Analysis 23rd to 25th May, 2019</td>
+        <td class="tg-0lax">23.05.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">24</td>
+        <td class="tg-0lax">Workshop on MATLAB 26th to 27th May, 2019</td>
+        <td class="tg-0lax">26.05.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">25</td>
+        <td class="tg-0lax">Workshop on Open Source and Proprietary Software for Research in Physical Education &amp; Sports Sciences 29th to 30th May, 2019</td>
+        <td class="tg-0lax">29.05.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">26</td>
+        <td class="tg-0lax">FITCO 07.06.19 TO 05.07.2019</td>
+        <td class="tg-0lax">07.06.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">27</td>
+        <td class="tg-0lax">CERTIFICATE COURSE IN YOGA EDUCATION (SELF FINANCING COURSE) 15.06.2019 TO 20.07.2019</td>
+        <td class="tg-0lax">15.06.2019</td>
+    </tr>
+    <tr>
+        <td class="tg-0lax">28</td>
+        <td class="tg-0lax">international day of yoga&nbsp;&nbsp;21.06.2019</td>
+        <td class="tg-0lax">21.06.2019</td>
+    </tr>
+</table></div>
+                </div>
+        </div>
+    </div>
+</section>
+<script charset="utf-8">var TGSort=window.TGSort||function(n){"use strict";function r(n){return n.length}function t(n,t){if(n)for(var e=0,a=r(n);a>e;++e)t(n[e],e)}function e(n){return n.split("").reverse().join("")}function a(n){var e=n[0];return t(n,function(n){for(;!n.startsWith(e);)e=e.substring(0,r(e)-1)}),r(e)}function o(n,r){return-1!=n.map(r).indexOf(!0)}function u(n,r){return function(t){var e="";return t.replace(n,function(n,t,a){return e=t.replace(r,"")+"."+(a||"").substring(1)}),l(e)}}function i(n){var t=l(n);return!isNaN(t)&&r(""+t)+1>=r(n)?t:NaN}function s(n){var e=[];return t([i,m,g],function(t){var a;r(e)||o(a=n.map(t),isNaN)||(e=a)}),e}function c(n){var t=s(n);if(!r(t)){var o=a(n),u=a(n.map(e)),i=n.map(function(n){return n.substring(o,r(n)-u)});t=s(i)}return t}function f(n){var r=n.map(Date.parse);return o(r,isNaN)?[]:r}function v(n,r){r(n),t(n.childNodes,function(n){v(n,r)})}function d(n){var r,t=[],e=[];return v(n,function(n){var a=n.nodeName;"TR"==a?(r=[],t.push(r),e.push(n)):("TD"==a||"TH"==a)&&r.push(n)}),[t,e]}function p(n){if("TABLE"==n.nodeName){for(var e=d(n),a=e[0],o=e[1],u=r(a),i=u>1&&r(a[0])<r(a[1])?1:0,s=i+1,v=a[i],p=r(v),l=[],m=[],g=[],h=s;u>h;++h){for(var N=0;p>N;++N){r(m)<p&&m.push([]);var T=a[h][N],C=T.textContent||T.innerText||"";m[N].push(C.trim())}g.push(h-s)}var L="tg-sort-asc",E="tg-sort-desc",b=function(){for(var n=0;p>n;++n){var r=v[n].classList;r.remove(L),r.remove(E),l[n]=0}};t(v,function(n,t){l[t]=0;var e=n.classList;e.add("tg-sort-header"),n.addEventListener("click",function(){function n(n,r){var t=d[n],e=d[r];return t>e?a:e>t?-a:a*(n-r)}var a=l[t];b(),a=1==a?-1:+!a,a&&e.add(a>0?L:E),l[t]=a;var i=m[t],v=function(n,r){return a*i[n].localeCompare(i[r])||a*(n-r)},d=c(i);(r(d)||r(d=f(i)))&&(v=n);var p=g.slice();p.sort(v);for(var h=null,N=s;u>N;++N)h=o[N].parentNode,h.removeChild(o[N]);for(var N=s;u>N;++N)h.appendChild(o[s+p[N-s]])})})}}var l=parseFloat,m=u(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g,/,/g),g=u(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g,/\./g);n.addEventListener("DOMContentLoaded",function(){for(var t=n.getElementsByClassName("tg"),e=0;e<r(t);++e)try{p(t[e])}catch(a){}})}(document);</script>
+</html>
